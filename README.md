@@ -10,3 +10,9 @@ List of music (ogg/mp3) and play them with `<audio>` tag.
 5. Include the snippet by editing your page : `[include snippet musiclist music/.*(ogg|mp3)]`
 
 Thanks to Mark Seuffert
+
+You can use this style :
+
+`.content .musiclist { margin:0; padding:0; list-style:none; width:100%; }
+.content .musiclist li {margin:0; padding:0.5em; }
+.content .musiclist li h5 {margin:0; padding:0; }`
