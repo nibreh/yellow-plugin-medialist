@@ -1,6 +1,5 @@
 # Musiclist snippet
 
-Snippet for [YellowCMS](https://github.com/markseu/yellowcms). 
 List of music (ogg/mp3) and play them with `<audio>` tag.
 
 1. Download and install [Yellow](https://github.com/markseu/yellowcms).
