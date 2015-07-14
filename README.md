@@ -35,11 +35,12 @@ The following arguments are available:
 For example:
 
     [medialist]
-    [medialist .*ogg musiclist]
-    [medialist .*mp3 musiclist]
+    [medialist .*ogg mediastyle]
+    [medialist .*mp3 mediastyle]
+    [medialist .*pdf mediastyle]
 
 You can use this CSS in your theme:
 
-    .content .musiclist { margin:0; padding:0; list-style:none; width:100%; }  
-    .content .musiclist li { margin:0; padding:0.5em; }  
-    .content .musiclist li h5 { margin:0; padding:0; }
+    .content .mediastyle { margin:0; padding:0; list-style:none; width:100%; }  
+    .content .mediastyle li { margin:0; padding:0.5em; }  
+    .content .mediastyle li h5 { margin:0; padding:0; }
