@@ -43,6 +43,8 @@ class YellowMedialist
 									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/ogg\" />";
 									$output .= "</audio>\n";
 									break;
+						case "pdf":	$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\" />Download</a>";
+									break;
 					}
 					$output .= "</li>\n";
 				}
