@@ -28,3 +28,5 @@ You can use this CSS in your theme:
 To list specific files, use prefix of the file name, example with `artist-song01.mp3`:
 
     [medialist artist.*mp3 mediastyle]
+    
+_Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
