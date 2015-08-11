@@ -43,7 +43,7 @@ class YellowMedialist
                         case "pdf":	$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\" />Download</a>\n";
 									break;
 					}
-	                $output .= "<h5><a href=\"".htmlspecialchars($file->getLocation())."\" />".htmlspecialchars(basename($file->fileName))."</a></h5>\n";
+	                		$output .= "<h5><a href=\"".htmlspecialchars($file->getLocation())."\" />".htmlspecialchars(basename($file->fileName))."</a></h5>\n";
 					$output .= "</li>\n";
 				}
 				$output .= "</ul>";
