@@ -1,13 +1,11 @@
 <?php
 // Copyright (c) 2013-2015 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
-
 // Medialist plugin
 class YellowMedialist
 {
 	const Version = "0.5.0";
 	var $yellow;			//access to API
-
 	// Handle initialisation
 	function onLoad($yellow)
 	{
@@ -32,7 +30,6 @@ class YellowMedialist
 				foreach($files as $file)
 				{
 					$output .= "<li>";
-					$output .= "<h5>".htmlspecialchars(basename($file->fileName))."</h5>";
 					switch($file->get("type"))
 					{
 						case "mp3":	$output .= "<audio controls=\"controls\">";
@@ -43,9 +40,10 @@ class YellowMedialist
 									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/ogg\" />";
 									$output .= "</audio>\n";
 									break;
-						case "pdf":	$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\" />Download</a>";
+                        case "pdf":	$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\" />Download</a>\n";
 									break;
 					}
+	                $output .= "<h5><a href=\"".htmlspecialchars($file->getLocation())."\" />".htmlspecialchars(basename($file->fileName))."</a></h5>\n";
 					$output .= "</li>\n";
 				}
 				$output .= "</ul>";
@@ -56,6 +54,5 @@ class YellowMedialist
 		return $output;
 	}
 }
-
 $yellow->plugins->register("medialist", "YellowMedialist", YellowMedialist::Version);
 ?>
