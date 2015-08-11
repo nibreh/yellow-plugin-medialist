@@ -4,7 +4,7 @@
 // Medialist plugin
 class YellowMedialist
 {
-	const Version = "0.5.0";
+	const Version = "0.5.2";
 	var $yellow;			//access to API
 	// Handle initialisation
 	function onLoad($yellow)
