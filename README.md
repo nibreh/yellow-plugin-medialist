@@ -2,7 +2,7 @@
 
 Medialist is the successor of the musiclist snippet, it creates a list of files from your media folder.
 
-Support Mp3, Ogg & PDF
+Support Mp3, Ogg & PDF - _Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
 
 1. Download and install [Yellow](https://github.com/datenstrom/yellow/).  
 2. Download [medialist.php](medialist.php?raw=true), copy it into your `system/plugins` folder.  
@@ -27,8 +27,6 @@ You can use this CSS in your theme:
     .content .mediastyle li { margin:0; padding:0.5em; }  
     .content .mediastyle li h5 { margin:0; padding:0; }
 
-To list specific files, use prefix of the file name, example with `artist-song01.mp3`:
+To list specific files, use prefix of the file name. Example with `artist-song01.mp3`:
 
     [medialist artist.*mp3 mediastyle]
-    
-_Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
