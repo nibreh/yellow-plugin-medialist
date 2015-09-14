@@ -1,6 +1,8 @@
 # Medialist plugin 0.5.2
 
-Medialist is the successor of the musiclist snippet, it creates a list of files from your media folder (Ogg, Mp3 and Pdf).
+Medialist is the successor of the musiclist snippet, it creates a list of files from your media folder.
+
+Support Mp3, Ogg & PDF
 
 1. Download and install [Yellow](https://github.com/datenstrom/yellow/).  
 2. Download [medialist.php](medialist.php?raw=true), copy it into your `system/plugins` folder.  
