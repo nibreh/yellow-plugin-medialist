@@ -17,15 +17,13 @@ The following arguments are available:
 For example:
 
     [medialist]
-    [medialist .*ogg mediastyle]
+    [medialist .*ogg]
     [medialist .*mp3 mediastyle]
     [medialist .*pdf mediastyle]
 
 You can use this CSS in your theme:
 
-    .content .mediastyle { margin:0; padding:0; list-style:none; width:100%; }  
-    .content .mediastyle li { margin:0; padding:0.5em; }  
-    .content .mediastyle li h5 { margin:0; padding:0; }
+    .content .mediastyle  {some style}  
 
 To list specific files, use prefix of the file name. Example with `artist-song01.mp3`:
 
