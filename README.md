@@ -5,6 +5,7 @@ Medialist is the successor of the musiclist snippet, it creates a list of files 
 Support Mp3, Ogg & PDF - _Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
 
 1. Download and install [Yellow](https://github.com/datenstrom/yellow/).  
+2. Download and install [Image plugin](https://github.com/datenstrom/yellow-extensions/tree/master/plugins/image)
 2. Download [medialist.php](medialist.php?raw=true), copy it into your `system/plugins` folder.  
 
 Create a `[medialist]` shortcut in your page.
