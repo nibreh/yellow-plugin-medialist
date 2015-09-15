@@ -4,7 +4,7 @@
 // Medialist plugin
 class YellowMedialist
 {
-	const Version = "0.5.2";
+	const Version = "0.5.3";
 	var $yellow;			//access to API
 	// Handle initialisation
 	function onLoad($yellow)
@@ -26,27 +26,26 @@ class YellowMedialist
 			if(count($files) && $this->yellow->plugins->isExisting("image"))
 			{
 				$page->setLastModified($files->getModified());
-				$output = "<ul class=\"".htmlspecialchars($style)."\">\n";
+				$output = "<div class=\"".htmlspecialchars($style)."\">\n";
 				foreach($files as $file)
 				{
-					$output .= "<li>";
+                    $output .= "<p>";
 					switch($file->get("type"))
 					{
-						case "mp3":	$output .= "<audio controls=\"controls\">";
-									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/mp3\" />";
-									$output .= "</audio>\n";
+						case "mp3":	$output .= "<audio controls=\"controls\">\n";
+									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/mp3\" />\n";
+									$output .= "</audio><br>\n";
 									break;
 						case "ogg":	$output .= "<audio controls=\"controls\">";
-									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/ogg\" />";
-									$output .= "</audio>\n";
+									$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/ogg\" />\n";
+									$output .= "</audio><br>\n";
 									break;
-                        			case "pdf":	$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\" />Download</a>\n";
+                        case "pdf":	$output .= "<b>PDF Document:</b> \n";
 									break;
 					}
-	                		$output .= "<h5><a href=\"".htmlspecialchars($file->getLocation())."\" />".htmlspecialchars(basename($file->fileName))."</a></h5>\n";
-					$output .= "</li>\n";
+	                $output .= "<a href=\"".htmlspecialchars($file->getLocation())."\">".htmlspecialchars(basename($file->fileName))."</a></p>\n";
 				}
-				$output .= "</ul>";
+				$output .= "</div>\n";
 			} else {
 				$page->error(500, "Medialist '$pattern' does not exist!");
 			}
