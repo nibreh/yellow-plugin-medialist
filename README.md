@@ -1,4 +1,4 @@
-# Medialist plugin 0.5.2
+# Medialist plugin 0.5.3
 
 Medialist is the successor of the musiclist snippet, it creates a list of files from your media folder.
 
