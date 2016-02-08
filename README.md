@@ -28,7 +28,8 @@ For example:
 
 You can use this CSS in your theme:
 
-    .content .mediastyle  {some style}  
+    .content .medialist ul {padding:0;list-style:none;}
+    .content .medialist ul li {margin-top:1em;}
 
 To list specific files, use prefix of the file name. Example with `artist-song01.mp3`:
 
