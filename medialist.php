@@ -38,10 +38,10 @@ class YellowMedialist
 								$output .= "</audio><br>\n";
 	                					$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\">".htmlspecialchars(basename($file->fileName))."</a></li>\n";
 									break;
-						case "ogg":	$output .= "<audio controls=\"controls\">";
+						case "ogg":	$output .= "<li><audio controls=\"controls\">";
 								$output .= "<source src=\"".htmlspecialchars($file->getLocation())."\" type=\"audio/ogg\" />\n";
 								$output .= "</audio><br>\n";
-	                					$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\">".htmlspecialchars(basename($file->fileName))."</a></p>\n";
+	                					$output .= "<a href=\"".htmlspecialchars($file->getLocation())."\">".htmlspecialchars(basename($file->fileName))."</a></li>\n";
 									break;
                         			case "pdf":	$output .= "<li><a href=\"".htmlspecialchars($file->getLocation())."\">".htmlspecialchars(basename($file->fileName))."</a></li>\n";
 									break;
