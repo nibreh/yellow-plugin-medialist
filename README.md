@@ -21,7 +21,7 @@ The following arguments are available:
 For example:
     
     [medialist /]
-    [medialist mp3/
+    [medialist mp3/]
     [medialist .*ogg]
     [medialist .*mp3 mediastyle]
     [medialist .*pdf mediastyle]
