@@ -27,7 +27,7 @@ class YellowMedialist
 			{
 				$page->setLastModified($files->getModified());
 				$output = "<div class=\"".htmlspecialchars($style)."\">\n";
-                    		$output .= "<ul>";
+                    		$output .= "<ul>\n";
 				foreach($files as $file)
 				{
 
