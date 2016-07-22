@@ -1,8 +1,8 @@
 # Medialist plugin 0.6.4
 
-Medialist creates a list of files from your media folder.
+Medialist creates a list of files (Mp3, Ogg & PDF) from your media folder.
 
-Support Mp3, Ogg & PDF - _Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
+_Your browser must support [HTML5 audio tag](https://en.wikipedia.org/wiki/HTML5_Audio)_
 
 1. [Download and install Yellow](https://github.com/datenstrom/yellow/).
 2. Download and install [Image plugin](https://github.com/datenstrom/yellow-plugins/tree/master/image).
@@ -22,10 +22,9 @@ The following arguments are available:
 ## Example:
     
     [medialist /]
-    [medialist mp3/]
-    [medialist .*ogg]
-    [medialist .*mp3 mediastyle]
+    [medialist downloads/]
     [medialist .*pdf mediastyle]
+    [medialist music/.*mp3 mediastyle]
 
 To list specific files, use prefix of the file name. Example with `artist-song01.mp3`:
 
@@ -33,5 +32,5 @@ To list specific files, use prefix of the file name. Example with `artist-song01
     
 You can use CSS to style medialist:
 
-    .content .medialist ul {padding:0;list-style:none;}
-    .content .medialist ul li {margin-top:1em;}
+    .content .mediastyle ul {padding:0;list-style:none;}
+    .content .mediastyle ul li {margin-top:1em;}
