@@ -9,7 +9,7 @@ Support Mp3, Ogg & PDF - _Your browser must support [HTML5 audio tag](https://en
 3. Download [master.zip](https://github.com/nibreh/yellow-plugin-medialist/archive/master.zip). If you are using Safari, right click and select 'Download file as'.
 4. Copy `master.zip` into your `system/plugins` folder.
 
-# How to list media?
+## How to list media?
 
 Create a `[medialist]` shortcut in your page.
 
