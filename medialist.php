@@ -1,10 +1,11 @@
 <?php
 // Copyright (c) 2013-2015 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
-// Medialist plugin
+
+// Medialist plugin by nibreh and markseu
 class YellowMedialist
 {
-	const Version = "0.5.4";
+	const VERSION = "0.6.4";
 	var $yellow;			//access to API
 	// Handle initialisation
 	function onLoad($yellow)
@@ -16,7 +17,7 @@ class YellowMedialist
 	// Handle page content parsing of custom block
 	function onParseContentBlock($page, $name, $text, $shortcut)
 	{
-		$output = NULL;
+		$output = null;
 		if($name=="medialist" && $shortcut)
 		{
 			list($pattern, $style, $size) = $this->yellow->toolbox->getTextArgs($text);
@@ -56,5 +57,5 @@ class YellowMedialist
 		return $output;
 	}
 }
-$yellow->plugins->register("medialist", "YellowMedialist", YellowMedialist::Version);
+$yellow->plugins->register("medialist", "YellowMedialist", YellowMedialist::VERSION);
 ?>
