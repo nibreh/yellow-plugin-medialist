@@ -1,4 +1,4 @@
-# Medialist plugin 0.6.4
+# Medialist plugin
 
 Medialist creates a list of files (Mp3, Ogg & PDF) from your media folder.
 
